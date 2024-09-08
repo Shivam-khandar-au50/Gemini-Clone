@@ -9,9 +9,11 @@ import {
   HarmCategory,
   HarmBlockThreshold,
 } from "@google/generative-ai";
+const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
 
-const apiKey = "AIzaSyB2DGh4Rz5P6pOcN7iX4I3NfnfltE1E964";
+// const apiKey = "AIzaSyB2DGh4Rz5P6pOcN7iX4I3NfnfltE1E964";
 const genAI = new GoogleGenerativeAI(apiKey);
+
 
 const model = genAI.getGenerativeModel({
   model: "gemini-1.5-flash",
@@ -35,7 +37,7 @@ async function run(prompt) {
 
   const result = await chatSession.sendMessage(prompt);
   const response = result.response.text()
-  console.log(response);
+
   return response
 }
 

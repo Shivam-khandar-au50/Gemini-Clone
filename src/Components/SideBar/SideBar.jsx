@@ -8,7 +8,7 @@ const SideBar = () => {
   const { onSent, previousPrompt, setResentPrompt, newChat } =
     useContext(Context);
   const loadPrompt = async (prompt) => {
-    console.log(prompt, "from sidebar");
+
     setResentPrompt(prompt);
     await onSent(prompt);
   };

@@ -19,7 +19,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p>Puchki Mini</p>
+        <p>Gemini Clone </p>
         <img src={assets.user_icon} alt="" />
       </div>
 
@@ -87,8 +87,7 @@ const Main = () => {
             </div>
           </div>
           <p className="bottom-info">
-            Gemini may display inaccurate info, including about people, so
-            double-check its responses. Your privacy and Gemini Apps
+          <p>This website is only for demo purpose <span className="greet2">(for testing Google gemini Api)</span> Site Developed by <span className="greet2">Shivam Khandar</span></p>
           </p>
         </div>
       </div>
